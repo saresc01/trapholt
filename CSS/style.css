@@ -1,0 +1,406 @@
+/* ------------------------------------------ Reset default margin on body --------------------------------------*/
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+/* ------------------------------------------------------------- Text styles ------------------------*/
+h1 {
+  color: #242424;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #242424;
+  font-size: 28px;  
+}
+
+h3 {
+  color: #e52e70;
+  font-size: 22px;   
+}
+
+
+p {
+  color: #242424;
+  font-size: 18px;
+}
+
+p2 {
+  color: #242424;
+  font-size: 14px;
+  padding: 0px;
+}
+
+/*------------------------------------------------ navigation bar ----------------------------------------*/
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #242424;
+}
+
+.row-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #242424;
+}
+
+.logo {
+  /* Logo styles */
+  display: flex;
+  justify-content: center;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation link styles nav bar*/
+.nav-link {
+  text-decoration: none;
+  color: #242424;
+  padding: 40px;
+}
+
+.nav-link:hover {
+  color: #e52e70;
+}
+
+/* Styles for icons */
+.mdi {
+  color: #242424;
+  text-decoration: none;
+  justify-content: center;
+}
+
+/*------------------------------------------------- Image + frame --------------------------------------------*/
+.full-width-image img {
+  /*image full*/
+  width: 100%;
+  height: auto;
+}
+
+/* box over picture*/
+.overlay-content {
+  position: absolute;
+  top: 65%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 390px;
+  height: 360px;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 12px solid #242424;
+  text-align: justify;
+}
+
+/*----------------------------------------------- Exhibitions, main page -----------------------------------------------*/
+.exhibition {
+  padding: 60px 80px;
+  padding-top: 100px;
+}
+
+nav {
+  background-color: #fefefe;
+  color: #242424;
+  font-size: 20px;
+  padding: 20px 40px 20px 40px;
+}
+
+/* links exhibition*/
+.nav-linkex {
+  text-decoration: none;
+  color: #242424;
+  padding: 10px 20px 10px 20px;
+  border: #fefefe 3px solid;
+}
+
+/*the buttons for this section is down with the other buttons*/
+
+/*----------------------------------------------- Adv. cafe main page----------------------------------------------------*/
+.adv-cont {
+  padding: 50px 95px 80px 95px;
+  align-items: normal;
+  justify-content: center;
+}
+
+.row {
+  align-items: center;
+  justify-content: center;
+}
+
+/*----------------------------------------------- Special events main page -----------------------------------------------*/
+.events {
+  padding: 50px 80px 20px 80px;
+  align-items: normal;
+  justify-content: center;
+}
+
+.nav-link-event {
+  /* links events*/
+  text-decoration: none;
+  color: #242424;
+  padding: 10px 20px 10px 20px;
+  border: #fefefe 3PX solid;
+}
+
+/*----------------------------------------------- Explore main page -----------------------------------------------------*/
+.explore {
+  padding: 40px;
+  align-items: start;  
+}
+
+.titleexplore {
+  padding: 30px 40px 5px 40px;
+  color: #242424;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+/* ----- All images with border ------*/
+.img-with-border {
+  border: 8px solid #242424;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*----------------------------------------------- Bottom part -----------------------------------------------------------*/
+.contact-section {
+  background-color: #242424;
+  color: #fefefe;
+}
+
+.contact-section h4 {
+  font-size: 22px;
+  margin-bottom: 1rem;
+  color: #ed6d9d;
+}
+
+.contact-section p,
+.contact-section ul {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  color: #fefefe;
+}
+
+/*----------------------------------------------- cafe page -------------------------------------------------------------------*/
+.gallery {
+  padding: 100px;
+  margin: 30px auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.menu{
+  color: #242424;
+  font-size: 18px;
+  padding-top: 10px;   
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+
+.menu h2{
+  color: #e52e70;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.menu h1{
+  color: #242424;
+  padding-left: 110px;
+  padding-top: 90px;  
+}
+
+#carouselControls {
+  border: 8px #242424 solid;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+/* Size arrows */
+#carouselControls .carousel-control-prev-icon,
+#carouselControls .carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/*----------------------------------------------- shop page -------------------------------------------------------------------*/
+.shop{
+  padding: 90px 80px 60px 80px;
+  align-items: normal;
+  justify-content: center;
+}
+
+/*----------------------------------------------- buy tickets page -------------------------------------------------------------------*/
+.opentickets {
+  padding: 90px;  
+}
+.opentime {   
+  color: #242424;
+  font-size: 18px;
+}
+.hour-container {
+  padding-bottom: 70px;
+}
+
+/*----------------------------------------------- About page -----------------------------------------------------*/
+
+.data-container {
+  padding: 100px 60px 100px 60px;  
+}
+
+.data-container h2{
+  color: #e52e70;  
+}
+
+
+/**----------------------------------------------------------ALL BUTTONS--------------------------------------------------*/
+
+.btn-primary {
+  background-color: #e52e70;
+  color: #fefefe;
+  text-align: center;
+  border: #f16220 3px solid;
+  margin: 10px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: #e52e70 3px solid;
+  color: #242424;
+  text-align: center;
+  margin: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #f16220;
+  color: #fefefe;
+  border: #e52e70 3px solid;
+}
+
+.btn-secondary:hover {
+  background-color: #ed6d9d;
+  border: #e52e70 3px solid;
+}
+
+/* Artist exhibitions - main page*/
+#nav-nanna-tab {
+  background-color: #e52e70;
+  color: #fefefe;
+}
+
+#nav-clay-tab {
+  background-color: #068db1;
+  color: #fefefe;
+}
+
+#nav-arne-tab {
+  background-color: #ed6d9d;
+  color: #fefefe;
+}
+
+#nav-room-tab {
+  background-color: #f16220;
+  color: #fefefe;
+}
+
+#nav-park-tab {
+  background-color: #068db1;
+  color: #fefefe;
+}
+
+#nav-yourex-tab {
+  background-color: #ed6d9d;
+  color: #fefefe;
+}
+
+#nav-chefart-tab {
+  background-color: #ed6d9d;
+  color: #fefefe;
+}
+
+#nav-clue-tab {
+  background-color: #f16220;
+  color: #fefefe;
+}
+
+.btnbook {    /* align butom book table cafe*/
+  margin-left: 36%;
+}
+
+/* Butoms background transparent ---> carrousel cafe page---*/
+#carouselControls .carousel-control-prev,
+#carouselControls .carousel-control-next {
+  background-color: transparent;
+  border: none;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------- Responsive design ---------------- */
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}

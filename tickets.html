@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy your tickets</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css">
+    <!-- Link css -->
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="nav-container row-nav col-12">
+            <div class="logo col-2">
+                <a href="/" class="logo-link">
+                    <img src="/img/SVG/Logo.svg" alt="Logo" style="width: 100px;">
+                </a>
+            </div>
+            <div class="col-8 center-content">
+                <a href="coffee.html" class="nav-link">Café Gustav Lind</a>
+                <a href="tickets.html" class="nav-link">Plan your visit</a>
+                <a href="shop.html" class="nav-link">Desing Shop</a>
+                <a href="about.html" class="nav-link">About Trapholt</a>
+            </div>
+            <div class="col-2 center-content"> <!-- Icon search-->
+                <a href="#" class="language"> <span class="mdi mdi-magnify"></span></a>
+
+                <div class="dropdown"> <!-- EN/DK -->
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        EN
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">DK</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First image: full screen + box news -->
+    <div class="full-width-image">
+        <img src="/img/toptickets.jpg" alt="Main">
+        <div class="overlay-content"> <!-- Box on top of the image -->
+            <h2><b>TRAPHOLT</b></h2>
+            <h3>OPEN TODAY 10 - 17</h3>
+            <p>Trapholt presents a steady succession of exhibitions on art, design and crafts and also boasts its own
+                collections, including a large collection of Danish furniture design.
+                It is set within a large sculpture park featuring works by contemporary Danish artists </p>
+        </div>
+    </div>
+
+    <!-- list open hours and prices -->
+    <div class="container opentickets col-12">
+        <div class="row align-items-start">
+            <div class="container opentime col-5">
+                <div class="hour-container r">
+                    <h2><b>OPENING HOURS</b></h2>
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Monday<p>Closed</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Tuesday<p>10 - 17</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Wednesday<p>10 - 21</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Thursday<p>10 - 17</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Friday<p>10 - 17</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Saturday<p>10 - 17</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Sunday<p>10 - 17</p>
+                        </li>
+                    </ul>
+                    <p2>The schedule may be subject to change during special events.<br>We open on Mondays during weeks
+                        7, 14, 24, and 42.</p2>
+
+                </div>
+            </div>
+
+            <div class="container opentime col-5">
+                <div class="hour-container"> <!-- text-center if we want to put in the center-->
+                    <h2><b>TICKETS</b></h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Adults<p>DKK 100</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Students*<p>DKK 50</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Groups**<p>DKK 85 kr./per person</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Under 18<p>Free admission</p>
+                        </li>
+                    </ul>
+                    <p2>*With valid student ID.<br>**4 - 10 persons per group<br>The price for special events may vary.
+                    </p2>
+                    <p> </p>
+                    <h3><b> Buy your tickets online and enjoy a <b>50% discount</b> on any of our products in Café
+                            Gustav
+                            Lind</b></h3>
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                            data-target="#buyTicketsModal">Buy your tickets now</a>
+                            <!-- go to modal to buy the tickets-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal to buy the tickets -->
+    <div class="modal fade" id="buyTicketsModal" tabindex="-1" role="dialog" aria-labelledby="buyTicketsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buyTicketsModalLabel">Buy your tickets</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="eventOption"><b>Choose your ticket type</b></label>
+                            <select class="form-control" id="eventOption">
+                                <option value="standard">Standard</option>
+                                <option value="chefticket">The chef and the artist, 19th January 2024</option>
+                                <option value="clueticket">Clue hunt at the museum, 27th January 2024</option>
+                            </select>
+                            <p2>Standard tickets are valid all days without special events. When you buy a
+                                special event ticket, you will receive all instructions via email.</p2>
+                        </div>
+                        <div class="form-group">
+                            <label for="adultTickets"><b>Adults Tickets</b></label>
+                            <input type="number" class="form-control" id="adultTickets"
+                                placeholder="Enter number of tickets">
+                        </div>
+                        <div class="form-group">
+                            <label for="studentTickets"><b>Students tickets</b></label>
+                            <input type="number" class="form-control" id="childTickets"
+                                placeholder="Enter number of tickets">
+                            <p2>If you do not have an ID, you will need to pay the difference at the
+                                museum.</p2>
+                        </div>
+                        <div class="form-group">
+                            <label for="freeTickets"><b>Under 18</b></label>
+                            <input type="number" class="form-control" id="freeTickets"
+                                placeholder="Enter number of tickets">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg justify-content-center">Pay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Bottom part-->
+    <div class="container-fluid contact-section py-5">
+        <div class="container">
+            <div class="row contact text-center">
+                <!-- First column -->
+                <div class="col-4">
+                    <h4>Address</h4>
+                    <ul class="list-unstyled">
+                        <li>Trapholt</li>
+                        <li>Æblehaven 23</li>
+                        <li>6000 Kolding</li>
+                    </ul>
+                    <h4>Telephone</h4>
+                    <ul class="list-unstyled">
+                        <li>+45 76 30 05 30</li>
+                    </ul>
+                    <h4>E-mail</h4>
+                    <ul class="list-unstyled">
+                        <li>kunstmuseum@trapholt.dk</li>
+                    </ul>
+                </div>
+
+                <!-- Second column -->
+                <div class="col-4 text-center">
+                    <h4>Opening hours</h4>
+                    <p>Tuesday – Sunday<br>10 – 17<br>Wednesday<br>10 – 21<br>Monday<br>Closed</p>
+                </div>
+
+                <!-- Third column -->
+                <div class="col-4">
+                    <h4>Follow us</h4>
+                    <ul class="list-unstyled">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                        <li>Tripadvisor</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap scripts (before close body) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

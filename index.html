@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trapholt</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css">
+    <!-- Link css -->
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="nav-container row-nav col-12">
+            <div class="logo col-2">
+                <a href="/" class="logo-link">
+                    <img src="/img/SVG/Logo.svg" alt="Logo" style="width: 100px;">
+                </a>
+            </div>
+            <div class="col-8 center-content">
+                <a href="coffee.html" class="nav-link">Café Gustav Lind</a>
+                <a href="tickets.html" class="nav-link">Plan your visit</a>
+                <a href="shop.html" class="nav-link">Desing Shop</a>
+                <a href="about.html" class="nav-link">About Trapholt</a>
+            </div>
+            <div class="col-2 center-content"> <!-- Icon search-->
+                <a href="#" class="language"> <span class="mdi mdi-magnify"></span></a>
+
+                <div class="dropdown"> <!-- EN/DK -->
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        EN
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">DK</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First image: full screen + box news -->
+    <div class="full-width-image">
+        <img src="/img/topmain.jpg" alt="Main">
+        <div class="overlay-content"> <!-- Box on top of the image -->
+            <h2><b>TRAPHOLT</b></h2>
+            <h3>OPEN TODAY 10 - 17</h3>
+            <p>Unveil the magic of creativity at our museum. Immerse yourself in captivating exhibitions, exciting
+                events, and don't miss our cozy café with stunning views.</p>
+            <a href="tickets.html" class="btn btn-primary btn-lg">Buy your tickets</a>
+        </div>
+    </div>
+
+    <!-- Current exhibitions, tabs -->
+    <div class="container exhibition col-12">
+        <nav> <!--buttons differents cards-->
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+
+                <button class="nav-linkex active" id="nav-nanna-tab" data-bs-toggle="tab" data-bs-target="#nav-nanna"
+                    type="button" aria-controls="nav-nanna" aria-selected="true" role="tab">Nanna Ditzel</button>
+
+                <button class="nav-linkex" id="nav-clay-tab" data-bs-toggle="tab" data-bs-target="#nav-clay"
+                    type="button" aria-controls="nav-clay" aria-selected="false" role="tab">In clay and paper</button>
+
+                <button class="nav-linkex" id="nav-arne-tab" data-bs-toggle="tab" data-bs-target="#nav-arne"
+                    type="button" aria-controls="nav-arne" aria-selected="false" role="tab">Arne Jacobsen</button>
+
+                <button class="nav-linkex" id="nav-room-tab" data-bs-toggle="tab" data-bs-target="#nav-room"
+                    type="button" aria-controls="nav-room" aria-selected="false" role="tab">The Richard Mortensen
+                    Room</button>
+
+                <button class="nav-linkex" id="nav-park-tab" data-bs-toggle="tab" data-bs-target="#nav-park"
+                    type="button" aria-controls="nav-park" aria-selected="false" role="tab">The Sculpture Park</button>
+
+                <button class="nav-linkex" id="nav-yourex-tab" data-bs-toggle="tab" data-bs-target="#nav-yourex"
+                    type="button" aria-controls="nav-yourex" aria-selected="false" role="tab">Your Exhibition</button>
+
+            </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent"> <!--content cards-->
+
+            <div class="tab-pane fade show active p-3" id="nav-nanna" role="tabpanel" aria-labelledby="nav-nanna-tab">
+                <!--inside nanna , id is data bs target-->
+                <h1>NANNA DITZEL</h1>
+                <p>Nanna Ditzel is one of the greatest Danish designers of the twentieth century. For the first time
+                    ever, her world of ideas and inspirations will be fully unfolded as Trapholt presents her total
+                    oeuvre in a densely sensuous array of furniture design, textiles, jewellery and immersive
+                    installations
+                </p>
+                <img src="/img/nanna.jpg" class="d-block w-100" alt="Nanna">
+            </div>
+
+            <div class="tab-pane fade p-3" id="nav-clay" role="tabpanel" aria-labelledby="nav-clay-tab">
+                <!--inside in clay and paper , id is data bs target-->
+                <h1>IN CLAY AND PAPER</h1>
+                <p>If you stroll down through the museums main walk, you will find yourself surrounded by large,
+                    strikingly thought-provoking works on paper and expressive ceramic sculptures by two internationally
+                    acclaimed artists: Danish Michael Kvium (b. 1955) and Norwegian Kjell Erik Killi-Olsen (b. 1952).
+                    Note how the artists familiar two-dimensional imagery from their paintings almost seem to crawl out
+                    of the canvas to settle on dishes, jars and vases. How does this transition affect the way we view
+                    the figures? See for yourself in the exhibition In Clay and Paper.
+                </p>
+                <img src="/img/paper.jpg" class="d-block w-100" alt="Clay">
+            </div>
+
+            <div class="tab-pane fade p-3" id="nav-arne" role="tabpanel" aria-labelledby="nav-arne-tab">
+                <!--inside Arne jacobsen-->
+                <h1>ARNE JACOBSEN</h1>
+                <p>An immersive experience
+                    The Kubeflex house gives Trapholt a unique opportunity to show Arne Jacobsen’s designs in a house
+                    designed by the master himself. Visitors will find interiors set out as dining and living rooms,
+                    incorporating examples of Arne Jacobsen’s other designs, such as the Vola line of faucets and the
+                    Cylinda-line series. Audiences are treated to an immersive experience of the internationally
+                    renowned architect’s designs, which beautifully complements the museum’s large collection of
+                    furniture by Danish architects and designers.
+
+                    Kubeflex was a pioneering contribution to the flexible architecture created back in the late 1960s.
+                    Preserved at Trapholt, Kubeflex will continue to inspire, amaze and delight guests from around the
+                    world for many years to come. Trapholt organises daily guided tours of the Kubeflex house; these
+                    tours are free for all museum visitors with a valid ticket
+                </p>
+                <img src="/img/arne.jpg" class="d-block w-100" alt="Arne">
+            </div>
+
+            <div class="tab-pane fade p-3" id="nav-room" role="tabpanel" aria-labelledby="nav-room-tab">
+                <!--inside The richard mortensen room-->
+                <h1>THE RICHARD MORTENSEN ROOM</h1>
+                <p>To create a space where architecture and painting merge: that is the main idea underpinning the
+                    Richard Mortensen Room at Trapholt.
+                    While the construction of Trapholt was underway, the museum’s director, Sven Jørn Andersen, was in
+                    talks with artist Richard Mortensen about acquiring a couple of paintings for the museum.
+
+                    By this time, the abstract artist Richard Mortensen (1910–93) had long been keenly interested in the
+                    interplay between painting and architecture. Mortensen proposed that if the architects behind the
+                    museum, Boye Lundgaard and Bente Aude, would design a room dedicated to Richard Mortensen’s art, he
+                    himself would create a series of paintings especially for the museum.
+                </p>
+                <img src="/img/richard.jpg" class="d-block w-100" alt="Arne">
+            </div>
+
+            <div class="tab-pane fade p-3" id="nav-park" role="tabpanel" aria-labelledby="nav-park-tab">
+                <!--inside The sculture park-->
+                <h1>THE SCULPTURE PARK</h1>
+                <p>Architecture, art and nature come together in Trapholt’s sculpture park.
+                    Set in a scenic location overlooking the Kolding Fjord, Trapholt’s sculpture park offers a stunning
+                    extension of your museum visit. The sculpture park presents a collection of monumental works that
+                    relate directly to the surrounding architecture and nature. Here you can explore works by Danish
+                    sculptors such as Bent Sørensen, Ingvar Cronhammar, Ole Christensen, Erik Heide, Søren Jensen, Bjørn
+                    Nørgaard, Lars Ravn and Finn Reinbothe.
+                    The sculpture park is always open to the public; no tickets required.
+                    The museum guides are happy to provide a plan of the sculpture park, allowing you to explore the
+                    works yourself.
+                </p>
+                <img src="/img/park.jpg" class="d-block w-100" alt="Park">
+            </div>
+
+            <div class="tab-pane fade p-3" id="nav-yourex" role="tabpanel" aria-labelledby="nav-yourex-tab">
+                <!--inside Your exhibition-->
+                <h1>YOUR EXHIBITION</h1>
+                <p>Create and curate your own exhibition at Trapholt.
+                    With YOUR exhibition, Trapholt invites all visitors to put together their own exhibitions featuring
+                    main works from Trapholt’s collection of art, design and crafts. You decide what your exhibition
+                    should contain and how it should be presented – perhaps based on a particular colour, subject
+                    matter, period, artist or something else entirely.
+
+                    The whole thing takes place digitally. If you wish to play along, you will take a disc-shaped token
+                    with you around the exhibition, enabling you to select the works you want to include and decide on
+                    how to present them. Upon completion, your exhibition will be shown on a large screen – and you can
+                    have it posted to your social media profiles.
+
+                    YOUR exhibition is suitable for adults and children alike.
+                </p>
+                <img src="/img/your.jpg" class="d-block w-100" alt="Park">
+            </div>
+        </div>
+    </div>
+
+    <!--line between cafe and exhibitions-->
+    <div class="border-bottom"></div>
+
+    <!-- Cafe gustav lind -->
+    <div class="container adv-cont col-12">
+        <div class="row">
+            <div class="col-3"> <!--photo cafe-->
+                <img src="/img/cafelind2.jpg" class="d-block w-100" alt="cafe">
+            </div>
+            <div class="col-6"> <!--text + 2 buttons-->
+                <h2><b>Café Gustav Lind</b></h2>
+                <p>Step into our café, where every sip is a celebration of flavour. Enjoy a delightful escape and
+                    savor our brews and delectable treats.
+                    As a special treat, when you purchase a ticket for any of our exhibitions, get a 50% discount on
+                    your café order—a perfect blend of culture and culinary delight!</p>
+                <div class="row">
+                    <a href="coffee.html" class="btn btn-secondary btn-lg">See our menu</a>
+                    <a href="tickets.html" class="btn btn-secondary btn-lg">Buy your tickets</a>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <img src="/img/drinks.png" class="img-fluid" alt="drink">
+            </div>
+        </div>
+    </div>
+
+    <!--line between cafe and events-->
+    <div class="border-bottom"></div>
+
+    <!-- Special Events at trapholt -->
+    <div class="container events col-12">
+        <nav> <!--buttons differents cards-->
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+
+                <button class="nav-link-event active" id="nav-chefart-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-chefart" type="button" aria-controls="nav-chefart" aria-selected="true"
+                    role="tab">The chef and the artist</button>
+
+                <button class="nav-link-event" id="nav-clue-tab" data-bs-toggle="tab" data-bs-target="#nav-clue"
+                    type="button" aria-controls="nav-clue" aria-selected="false" role="tab">Clue hunt at the
+                    museum</button>
+            </div>
+
+        </nav>
+        <div class="tab-content" id="nav-tabContent"> <!--content cards-->
+
+            <div class="tab-pane fade show active p-3" id="nav-chefart" role="tabpanel"
+                aria-labelledby="nav-chefart-tab">
+                <!--inside event chef and artist-->
+                <h1>THE CHEF AND THE ARTIST</h1>
+                <h2>19. January 2024 16.30</h2>
+                <img src="/img/eventchef.png" class="d-block w-100" alt="Chefart">
+                <div class="row">
+                    <div class="col-12 p-4">
+                        <p>Join us for a unique evening at our modern art museum. Witness the fusion of gastronomy and
+                            art as a renowned chef crafts culinary masterpieces in our café, accompanied by an artist
+                            painting each dish live. Immerse yourself in this multisensory experience with a glass of
+                            wine and the chance to converse with the chef and artist.
+                        </p>
+                        <a href="tickets.html" class="btn btn-primary btn-lg ">Buy your tickets</a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade show p-3" id="nav-clue" role="tabpanel" aria-labelledby="nav-clue-tab">
+                <!--inside event clue hunt-->
+                <h1>CLUE HUNT AT THE MUSEUM</h1>
+                <h2>27. January 2024 12.30</h2>
+                <img src="/img/eventclue.png" class="d-block w-100" alt="Cluehunt">
+                <div class="col-12 p-4">
+                    <p>Embark on an exciting clue hunt at our modern art museum. Upon entry, you'll receive a map
+                        and detailed instructions to solve the puzzle. The first to crack it will win a wonderful
+                        dinner, and the second fastest will receive a 250kr discount at our store! Join the
+                        adventure and immerse yourself in a unique experience, spots are limited!
+                    </p>
+                    <a href="tickets.html" class="btn btn-primary btn-lg">Buy your tickets</a>
+                </div>                
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--line between events and Explore-->
+    <div class="border-bottom"></div>
+
+    <!-- Explore -->
+    <div class="container-fluid explore">
+        <div class="col-12">
+            <div class="titleexplore">EXPLORE</div>
+            <div class="row">
+                <div class="col-4 text-center">
+                    <img src="/img/cafelind.jpg" class="img-with-border">
+                    <h3>More about us</h3>
+                    <a href="about.html" class="btn btn-secondary btn-lg">Reed more</a>
+                </div>
+
+                <div class="col-4 text-center">
+                    <img src="img/duck.jpg" class="img-with-border">
+                    <h3>Shop</h3>
+                    <a href="shop.html" class="btn btn-secondary btn-lg">Go to shop</a>
+                </div>
+
+                <div class="col-4 text-center">
+                    <img src="img/chair.jpg" class="img-with-border">
+                    <h3>Listen to our podcast!</h3>
+                    <a href="https://trapholt.dk/podcast/" class="btn btn-secondary btn-lg">Listen</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Bottom part-->
+    <div class="container-fluid contact-section py-5">
+        <div class="container">
+            <div class="row contact text-center">
+
+                <!-- First column -->
+                <div class="col-4">
+                    <h4>Address</h4>
+                    <ul class="list-unstyled">
+                        <li>Trapholt</li>
+                        <li>Æblehaven 23</li>
+                        <li>6000 Kolding</li>
+                    </ul>
+                    <h4>Telephone</h4>
+                    <ul class="list-unstyled">
+                        <li>+45 76 30 05 30</li>
+                    </ul>
+                    <h4>E-mail</h4>
+                    <ul class="list-unstyled">
+                        <li>kunstmuseum@trapholt.dk</li>
+                        <!--<a href="mailto:kunstmuseum@trapholt.dk">kunstmuseum@trapholt.dk</a>-->
+                    </ul>
+                </div>
+
+                <!-- Second column -->
+                <div class="col-4 text-center">
+                    <h4>Opening hours</h4>
+                    <p>Tuesday – Sunday<br>10 – 17<br>Wednesday<br>10 – 21<br>Monday<br>Closed</p>
+                </div>
+
+                <!-- Third column -->
+                <div class="col-4">
+                    <h4>Follow us</h4>
+                    <ul class="list-unstyled">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                        <li>Tripadvisor</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap scripts (before close body) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
